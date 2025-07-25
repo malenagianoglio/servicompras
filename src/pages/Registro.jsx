@@ -84,10 +84,11 @@ function validar() {
     }
 
     if (!confirmarContrasena) {
-        errores.confirmarContrasena = "Este campo es obligatorio";
-    } else {
-        if (errores.confirmarContrasena !== errores.contrasena) errores.confirmarContrasena = "Las contraseñas no coinciden"
+      errores.confirmarContrasena = "Este campo es obligatorio";
+    } else if (contrasena !== confirmarContrasena) {
+      errores.confirmarContrasena = "Las contraseñas no coinciden";
     }
+
 
     return errores;
 }
@@ -106,7 +107,8 @@ const handleSubmit = (e) => {
 
 return (
     <form noValidate onSubmit={handleSubmit}>
-        <div>
+      <div className='fila'>
+        <div className='campo'>
             <label>Nombre:</label>
             <input
             type= "text"
@@ -117,7 +119,7 @@ return (
             />
             {errores.nombre && <p className="error">{errores.nombre}</p>}
         </div>
-        <div>
+        <div className='campo'>
             <label>Apellido:</label>
             <input
             type = "text"
@@ -128,7 +130,9 @@ return (
             />
             {errores.apellido && <p className="error">{errores.apellido}</p>}
         </div>
-        <div>
+      </div>
+      <div className='fila'>
+        <div className='campo'>
             <label>Correo electrónico:</label>
             <input
             type = "email"
@@ -139,7 +143,7 @@ return (
             />
             {errores.email && <p className="error">{errores.email}</p>}
         </div>
-        <div>
+        <div className='campo'>
             <label>Teléfono:</label>
             <input
             type = "tel"
@@ -150,7 +154,9 @@ return (
             />
             {errores.telefono && <p className="error">{errores.telefono}</p>}
         </div>
-        <div>
+      </div>
+      <div className='fila'>
+        <div className='campo'>
             <label>Dirección:</label>
             <input
             type = "text"
@@ -161,7 +167,9 @@ return (
             />
             {errores.direccion && <p className="error">{errores.direccion}</p>}
         </div>
-         <div>
+      </div>
+      <div className='fila'>
+         <div className='campo'>
             <label>Ciudad:</label>
             <input
             type = "text"
@@ -172,7 +180,7 @@ return (
             />
             {errores.ciudad && <p className="error">{errores.ciudad}</p>}
         </div>
-        <div>
+        <div className='campo'>
             <label>Código Postal:</label>
             <input
             type = "number"
@@ -183,7 +191,9 @@ return (
             />
             {errores.codigoPostal && <p className="error">{errores.codigoPostal}</p>}
         </div>
-        <div>
+      </div>
+      <div className='fila'>
+         <div className='campo'>
             <label>Contraseña:</label>
             <input
             type = "password"
@@ -194,7 +204,7 @@ return (
             />
             {errores.contrasena && <p className="error">{errores.contrasena}</p>}
         </div>
-        <div>
+        <div className='campo'>
             <label>Confirmar Contraseña:</label>
             <input
             type = "password"
@@ -205,8 +215,9 @@ return (
             />
             {errores.confirmarContrasena && <p className="error">{errores.confirmarContrasena}</p>}
         </div>
+      </div>
 
-        <button type="submit">Crear Cuenta</button>
+        <button className="submit" type="submit">Crear Cuenta</button>
 
     </form>
 );
