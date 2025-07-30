@@ -2,7 +2,8 @@
     font-family: 'Lexend', sans-serif;
     padding-top: 60px;
     height: 100vh;
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .buscador {
@@ -24,10 +25,21 @@
     max-width: 1200px;
 }
 
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.encabezado{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
 .filters{
     max-width: 250px;
-    background-color: grey;
-    height: 500px;
+    background-color:  #f8f9fa;
+    height: 100%;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
@@ -50,6 +62,10 @@ label.categoria-item{
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.items p{
+    margin: 20px 0 10px;
 }
 
 .item {
@@ -81,6 +97,22 @@ label.categoria-item{
 .stars[data-stars="2"] { --rating: 2; }
 .stars[data-stars="1"] { --rating: 1; }
 
+.card-encabezado{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.cards-results{
+    flex:1;
+    background-color:  #f8f9fa;
+    margin: 10px;
+    border-radius: 10px;
+    height: 100%;
+}
+
 .resultado-card {
   display: flex;
   gap: 1rem;
@@ -89,14 +121,13 @@ label.categoria-item{
   border-radius: 12px;
   background-color: #fff;
   align-items: center;
-  max-width: 700px;
-  margin: 1rem auto;
+  margin: 0 30px 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-imagen {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -134,7 +165,7 @@ label.categoria-item{
 
 .btn-perfil {
   padding: 0.5rem 1rem;
-  background-color: #ff69b4;
+  background-color: #5409DA;
   color: white;
   border: none;
   border-radius: 6px;
@@ -143,7 +174,7 @@ label.categoria-item{
 }
 
 .btn-perfil:hover {
-  background-color: #e0559e;
+  background-color: #4E71FF;
 }
 
 
