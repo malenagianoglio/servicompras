@@ -52,6 +52,7 @@ function ResultadosBusqueda ( ) {
                             <div class="stars" data-stars="1"></div>
                         </div>
                     </div>
+                    <button className="btn-perfil">Aplicar filtro</button>
                 </div>
                 <div className="cards-results">
                     <div className="card-encabezado">
