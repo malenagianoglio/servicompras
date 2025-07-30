@@ -28,12 +28,12 @@ function Home () {
                         <div className="icon plomeria"><FaWater size={30} color="#098ff6ff"/></div>
                         <p>Plomería</p>
                     </div>
-                    <Link to="/results">
-                        <div className="card">
-                            <div className="icon electricidad"><FaBolt size={30} color="#f9b805ff"/></div>
+                    <div className="card">
+                        <Link to="/results" className="card-link">
+                            <div className="icon electricidad"><FaBolt size={30} color="#f9b805ff" /></div>
                             <p>Electricidad</p>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                     <div className="card">
                         <div className="icon costura"><FaCut size={30} color="#cd6109ff"/></div>
                         <p>Costura</p>
