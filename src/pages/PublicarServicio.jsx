@@ -53,11 +53,7 @@ function PublicarServicio () {
   return (
     <div className="publicar-page">
       <h1 className="publicar-titulo">Publicar Servicio</h1>
-
-      {/* Div general que contiene todos los cuadraditos */}
       <div className="publicar-form-container">
-
-        {/* Primer cuadradito: Información básica */}
         <div className="publicar-form-section">
           <h2 className="publicar-subtitulo">Información básica</h2>
 

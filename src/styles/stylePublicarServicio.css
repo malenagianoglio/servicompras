@@ -1,6 +1,6 @@
 .publicar-page {
   font-family: 'Lexend', sans-serif;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-left: 2rem;
   padding-right: 2rem;
   min-height: 100vh;
@@ -8,10 +8,10 @@
 }
 
 .publicar-titulo {
-  text-align: center;
+  text-align: start;
   color: #5409DA;
   font-size: 1.8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .publicar-form-container {
@@ -21,7 +21,6 @@
 }
 
 .publicar-form-section {
-  border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 10px;
   background-color: #f9f9f9;
