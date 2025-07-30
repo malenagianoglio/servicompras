@@ -1,12 +1,18 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import "./styles/style.css";
-import Navbar from "./pages/Navbar";
-import IniciarSesion from "./pages/IniciarSesion";
-import Registro from "./pages/Registro";
-import Login from "./pages/Login";
+import Navbar from "./components/Navbar";
+import AuthPage from "./pages/auth/AuthPage";
+import Home from "./pages/Home"; 
+import Results from "./pages/ResultadosBusqueda";
 
 export default function App() {
   return (
-    <Login/>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<AuthPage />} />
+        <Route path="/results" element={<Results/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }

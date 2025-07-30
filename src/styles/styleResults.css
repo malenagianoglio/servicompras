@@ -1,0 +1,149 @@
+.resultados-page{
+    font-family: 'Lexend', sans-serif;
+    padding-top: 60px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.buscador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #5409DA;
+}
+
+.buscador h1{
+    display: flex;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.container-browser{
+    max-width: 1200px;
+}
+
+.filters{
+    max-width: 250px;
+    background-color: grey;
+    height: 500px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #5409DA; 
+  cursor: pointer;
+}
+
+label.categoria-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stars::before {
+  content: "★★★★★";
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    gold calc(var(--rating) * 20%),
+    #ccc calc(var(--rating) * 20%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stars {
+  --rating: 5;
+}
+
+.stars[data-stars="5"] { --rating: 5; }
+.stars[data-stars="4"] { --rating: 4; }
+.stars[data-stars="3"] { --rating: 3; }
+.stars[data-stars="2"] { --rating: 2; }
+.stars[data-stars="1"] { --rating: 1; }
+
+.resultado-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  align-items: center;
+  max-width: 700px;
+  margin: 1rem auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-imagen {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-info h4 {
+  margin: 0.2rem 0;
+  font-weight: normal;
+  color: #555;
+}
+
+.estrellas {
+  color: gold;
+  font-size: 1.1rem;
+}
+
+.ubicacion {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.4rem 0;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.btn-perfil {
+  padding: 0.5rem 1rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-perfil:hover {
+  background-color: #e0559e;
+}
+
+

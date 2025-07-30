@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import '../styles/estilo_registro.css';
+import "../../styles/styleAuth.css";
 
-function Registro() {
+function RegisterPage() {
     const [formulario, setFormulario] = useState({
     nombre: '',
     apellido: '',
@@ -223,5 +223,5 @@ return (
 );
 }
 
-export default Registro;
+export default RegisterPage;
 

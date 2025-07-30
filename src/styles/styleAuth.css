@@ -2,37 +2,40 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+.auth{
+  padding-top: 60px;
+  overflow-y: auto;
   margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
 }
 
-.container {
-  border: 1px solid black;
+.auth-container {
+  border: 1px solid grey;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
+  margin: 30px;
 }
 
-.buttons {
+.auth-buttons {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.buttons button {
+.auth-buttons button {
   flex: 1; 
   padding: 15px;
-  font-size: 1.1rem;
   cursor: pointer;
   border: none;
   background-color: white;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
 }
 
 button.active {
@@ -87,13 +90,14 @@ button.submit {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
   border: 1px solid grey;
   width: 25%;
   background-color: #5409DA;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
   color: white;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
 }
 
 button.submit:hover {

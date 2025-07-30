@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import '../styles/estilo_registro.css';
+import "../../styles/styleAuth.css";
 
-function IniciarSesion() {
+function LoginPage() {
     const [formulario, setFormulario] = useState({
     email: '',
     contrasena: '',
@@ -85,5 +85,5 @@ return (
 );
 }
 
-export default IniciarSesion;
+export default LoginPage;
 
