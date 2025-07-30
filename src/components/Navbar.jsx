@@ -26,6 +26,7 @@ function Navbar() {
             <div className="navbar-buttons">
                 <button className="btn-login" onClick={() => navigate("/login", { state: { isLogin: true } })}>Iniciar Sesión</button>
                 <button className="btn-register" onClick={() => navigate("/login", { state: { isLogin: false } })}>Registrarse</button>
+                <button className="btn-publicar" onClick={() => navigate("/publicar")}>Publicar Servicio</button>
             </div>
         </div>
     </nav>
