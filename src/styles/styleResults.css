@@ -31,8 +31,8 @@
     width: 100%;
 }
 
-.encabezado{
-    font-size: 14px;
+.encabezado h1{
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -105,6 +105,14 @@ label.categoria-item{
     padding: 20px 30px;
 }
 
+.cards-text h1{
+  font-size: 20px;
+}
+
+.cards-order select{
+  font-family: 'Lexend', sans-serif;
+}
+
 .cards-results{
     flex:1;
     background-color:  #f8f9fa;
@@ -171,6 +179,7 @@ label.categoria-item{
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+  font-family: 'Lexend', sans-serif;
 }
 
 .btn-perfil:hover {

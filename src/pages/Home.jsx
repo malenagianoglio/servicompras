@@ -28,7 +28,7 @@ function Home () {
                         <div className="icon plomeria"><FaWater size={30} color="#098ff6ff"/></div>
                         <p>Plomería</p>
                     </div>
-                    <Link to="/login">
+                    <Link to="/results">
                         <div className="card">
                             <div className="icon electricidad"><FaBolt size={30} color="#f9b805ff"/></div>
                             <p>Electricidad</p>
