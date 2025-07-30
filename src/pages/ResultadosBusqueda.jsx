@@ -56,18 +56,17 @@ function ResultadosBusqueda ( ) {
                 <div className="cards-results">
                     <div className="card-encabezado">
                         <div className="cards-text">
-                        <h1>Resultados para "Electricidad"</h1>
-                    </div>
-                    <div className="cards-order">
-                        <label htmlFor="ordenar">Ordenar por: </label>
+                            <h1>Resultados para "Electricidad"</h1>
+                        </div>
+                        <div className="cards-order">
+                            <label htmlFor="ordenar">Ordenar por: </label>
                             <select id="ordenar">
                                 <option value="">Seleccionar</option>
                                 <option value="calificacion">Calificación</option>
                                 <option value="ubicacion">Ubicación</option>
                                 <option value="nombre">Nombre</option>
                             </select>
-                    </div>
-
+                        </div>
                     </div>
                         <ResultadoCard 
                             imagen="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTabVl1YioP9EFCso0C3gP9fGyw7mon_GFiA&s"

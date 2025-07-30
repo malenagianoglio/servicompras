@@ -132,10 +132,16 @@
   transition: transform 0.2s ease;
 }
 
-
-
 .card:hover {
   transform: scale(1.05);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .icon {
